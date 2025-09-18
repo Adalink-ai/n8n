@@ -11930,6 +11930,74 @@
 		"type": "node"
 	},
 	{
+		"uuid": "0e8e8ac7-6fc3-49f5-95c5-508e1b7d8ee8",
+		"key": "@n8n/n8n-nodes-langchain.lmChatAdalinkAgent",
+		"subcategory": "*",
+		"properties": {
+			"displayName": "Adalink Agent Chat Model",
+			"defaults": {
+				"name": "Adalink Agent Chat Model"
+			},
+			"description": "For advanced usage with an AI chain",
+			"name": "@n8n/n8n-nodes-langchain.lmChatAdalinkAgent",
+			"group": ["transform"],
+			"iconUrl": {
+				"light": "icons/@n8n/n8n-nodes-langchain/dist/nodes/llms/LMChatAdalinkAgent/openAiLight.svg",
+				"dark": "icons/@n8n/n8n-nodes-langchain/dist/nodes/llms/LMChatAdalinkAgent/openAiLight.dark.svg"
+			},
+			"outputs": ["ai_languageModel"],
+			"codex": {
+				"categories": ["AI"],
+				"subcategories": {
+					"AI": ["Language Models", "Root Nodes"],
+					"Language Models": ["Chat Models (Recommended)"]
+				},
+				"resources": {
+					"primaryDocumentation": [
+						{
+							"url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/"
+						}
+					]
+				}
+			}
+		},
+		"type": "node"
+	},
+	{
+		"uuid": "d9be7774-53bd-4d94-8447-2bb3cd17641a",
+		"key": "@n8n/n8n-nodes-langchain.lmChatAdalinkChat",
+		"subcategory": "*",
+		"properties": {
+			"displayName": "Adalink Chat Model",
+			"defaults": {
+				"name": "Adalink Chat Model"
+			},
+			"description": "For advanced usage with an AI chain",
+			"name": "@n8n/n8n-nodes-langchain.lmChatAdalinkChat",
+			"group": ["transform"],
+			"iconUrl": {
+				"light": "icons/@n8n/n8n-nodes-langchain/dist/nodes/llms/LMChatAdalinkChat/openAiLight.svg",
+				"dark": "icons/@n8n/n8n-nodes-langchain/dist/nodes/llms/LMChatAdalinkChat/openAiLight.dark.svg"
+			},
+			"outputs": ["ai_languageModel"],
+			"codex": {
+				"categories": ["AI"],
+				"subcategories": {
+					"AI": ["Language Models", "Root Nodes"],
+					"Language Models": ["Chat Models (Recommended)"]
+				},
+				"resources": {
+					"primaryDocumentation": [
+						{
+							"url": "https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/"
+						}
+					]
+				}
+			}
+		},
+		"type": "node"
+	},
+	{
 		"uuid": "27e66a71-9774-46c2-ae1e-de0d490ded5b",
 		"key": "@n8n/n8n-nodes-langchain.lmCohere",
 		"subcategory": "*",
