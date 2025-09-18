@@ -93,6 +93,8 @@ function getInputs(
 						'@n8n/n8n-nodes-langchain.lmChatGroq',
 						'@n8n/n8n-nodes-langchain.lmChatOllama',
 						'@n8n/n8n-nodes-langchain.lmChatOpenAi',
+						'@n8n/n8n-nodes-langchain.lmChatAdalinkAgent',
+						'@n8n/n8n-nodes-langchain.lmChatAdalinkChat',
 						'@n8n/n8n-nodes-langchain.lmChatGoogleGemini',
 						'@n8n/n8n-nodes-langchain.lmChatGoogleVertex',
 						'@n8n/n8n-nodes-langchain.lmChatMistralCloud',
@@ -127,6 +129,8 @@ function getInputs(
 						'@n8n/n8n-nodes-langchain.lmChatMistralCloud',
 						'@n8n/n8n-nodes-langchain.lmChatOllama',
 						'@n8n/n8n-nodes-langchain.lmChatOpenAi',
+						'@n8n/n8n-nodes-langchain.lmChatAdalinkAgent',
+						'@n8n/n8n-nodes-langchain.lmChatAdalinkChat',
 						'@n8n/n8n-nodes-langchain.lmChatGroq',
 						'@n8n/n8n-nodes-langchain.lmChatGoogleVertex',
 						'@n8n/n8n-nodes-langchain.lmChatGoogleGemini',
@@ -155,6 +159,8 @@ function getInputs(
 				filter: {
 					nodes: [
 						'@n8n/n8n-nodes-langchain.lmChatOpenAi',
+						'@n8n/n8n-nodes-langchain.lmChatAdalinkAgent',
+						'@n8n/n8n-nodes-langchain.lmChatAdalinkChat',
 						'@n8n/n8n-nodes-langchain.lmChatAzureOpenAi',
 					],
 				},
