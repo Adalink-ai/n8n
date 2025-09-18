@@ -15,16 +15,16 @@ import { openAiFailedAttemptHandler } from '../../vendors/OpenAi/helpers/error-h
 import { makeN8nLlmFailedAttemptHandler } from '../n8nLlmFailedAttemptHandler';
 import { N8nLlmTracing } from '../N8nLlmTracing';
 
-export class LmChatVercelAiGateway implements INodeType {
+export class LmChatAdalinkAiGateway implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Vercel AI Gateway Chat Model',
-		name: 'lmChatVercelAiGateway',
+		displayName: 'Adalink AI Gateway Chat Model',
+		name: 'lmChatAdalinkAiGateway',
 		icon: { light: 'file:vercel.dark.svg', dark: 'file:vercel.svg' },
 		group: ['transform'],
 		version: [1],
-		description: 'For advanced usage with an AI chain via Vercel AI Gateway',
+		description: 'For advanced usage with an AI chain via Adalink AI Gateway',
 		defaults: {
-			name: 'Vercel AI Gateway Chat Model',
+			name: 'Adalink AI Gateway Chat Model',
 		},
 		codex: {
 			categories: ['AI'],
@@ -47,7 +47,7 @@ export class LmChatVercelAiGateway implements INodeType {
 		outputNames: ['Model'],
 		credentials: [
 			{
-				name: 'vercelAiGatewayApi',
+				name: 'adalinkAiGatewayApi',
 				required: true,
 			},
 		],
@@ -209,7 +209,8 @@ export class LmChatVercelAiGateway implements INodeType {
 	};
 
 	async supplyData(this: ISupplyDataFunctions, itemIndex: number): Promise<SupplyData> {
-		const credentials = await this.getCredentials<OpenAICompatibleCredential>('vercelAiGatewayApi');
+		const credentials =
+			await this.getCredentials<OpenAICompatibleCredential>('adalinkAiGatewayApi');
 
 		const modelName = this.getNodeParameter('model', itemIndex) as string;
 

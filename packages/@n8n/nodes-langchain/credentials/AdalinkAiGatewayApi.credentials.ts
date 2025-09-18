@@ -5,12 +5,12 @@ import type {
 	INodeProperties,
 } from 'n8n-workflow';
 
-export class VercelAiGatewayApi implements ICredentialType {
-	name = 'vercelAiGatewayApi';
+export class AdalinkAiGatewayApi implements ICredentialType {
+	name = 'adalinkAiGatewayApi';
 
-	displayName = 'Vercel AI Gateway';
+	displayName = 'Adalink AI Gateway';
 
-	documentationUrl = 'vercelaigateway';
+	documentationUrl = 'adalinkaigateway';
 
 	properties: INodeProperties[] = [
 		{
@@ -20,7 +20,7 @@ export class VercelAiGatewayApi implements ICredentialType {
 			typeOptions: { password: true },
 			required: true,
 			default: '',
-			description: 'Your credentials for the Vercel AI Gateway',
+			description: 'Your credentials for the Adalink AI Gateway',
 		},
 		{
 			displayName: 'Base URL',
@@ -28,7 +28,7 @@ export class VercelAiGatewayApi implements ICredentialType {
 			type: 'string',
 			required: true,
 			default: 'https://ai-gateway.vercel.sh/v1',
-			description: 'The base URL for your Vercel AI Gateway instance',
+			description: 'The base URL for your Adalink AI Gateway instance',
 			placeholder: 'https://ai-gateway.vercel.sh/v1',
 		},
 	];
